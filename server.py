@@ -2,7 +2,7 @@ import folium
 import pandas as pd
 from folium.plugins import MarkerCluster
 import random as ra
-l = pd.read_csv('C:\\Users\ASTRA\Desktop\cdr\cdrdata.csv',parse_dates=["time_stamp"])
+l = pd.read_csv('corrected_cdr_data.csv',parse_dates=["time_stamp"])
 length = len(l)
 
 
@@ -106,5 +106,5 @@ m.add_child(fg_ac3)
 
 m.add_child(folium.LayerControl())
 
-m.save('C:\\Users\\ASTRA\\Desktop\\newv3.html')
+m.save('map.html')
 
